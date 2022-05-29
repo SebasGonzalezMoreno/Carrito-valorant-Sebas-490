@@ -1,0 +1,287 @@
+
+@import url('http://fonts.cdnfonts.com/css/valorant');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff5353;
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'VALORANT', sans-serif;
+  font-size: 2rem;
+  color: #000000;
+  border-bottom: #000000 2px groove;
+  padding: 0;
+}
+
+select {
+  width: 15rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px #000000;
+  border-radius: 15px;
+  font-family: 'VALORANT', sans-serif;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-products {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#btn-create {
+  font-family: 'VALORANT', sans-serif;
+  width: 12rem;
+  height: 2rem;
+  border-radius: 15px;
+  background-color: #ea1004;
+  color: #ffffff;
+  font-size: 1rem;  
+  cursor: pointer;
+}
+
+#btn-create:hover,
+#btn-create:focus {
+  font-family: 'VALORANT', sans-serif;
+  background-color: #ea1004;
+  font-weight: 900;
+  color: #ffff;
+}
+
+.card-product {
+  margin: 1rem;
+  width: 10rem;
+  height: 13rem;
+  border-radius: 15px;
+  border: groove #ffffff 2px;
+  background-color: #ff4b4b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-product {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height: 50%;
+}
+
+.name-product {
+  margin-top: 0.8rem;
+  color: #000000;
+  font-family: 'VALORANT', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.price-product {
+  font-family: 'VALORANT', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.btn-add {
+  font-family: 'VALORANT', sans-serif;
+  width: 8rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-add:hover,
+.btn-add:focus {
+  font-family: 'VALORANT', sans-serif;
+  cursor: pointer;
+  background-color: #3cff00;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.btn-delete{
+  font-family: 'VALORANT', sans-serif;
+  width: 8rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-delete:hover, 
+.btn-add:focus{
+  font-family: 'VALORANT', sans-serif;
+  cursor: pointer;
+  background-color: #ff0000;
+  font-weight: 900;
+  color: #000000;
+}
+
+.modal {
+  width: 20rem;
+  height: 15rem;  
+  border: groove black 2px;
+  background-color: #ea1004;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;  
+  z-index: 1;
+  display: none;
+}
+
+.modal > input {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 15px;
+  background-color: #221007;
+  color: #ffff;
+  font-size: 1rem;  
+}
+
+.modal input[type="file"] {
+  width: 14rem;
+  height: 2rem;
+  border-radius: 5px;  
+  background-color: #ffffff;
+  font-size: 1rem;  
+  margin-left: 4rem;
+}
+
+.modal > button {
+  width: 12rem;
+  height: 2rem;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1rem;  
+  cursor: pointer;  
+}
+
+.modal > button:hover,
+.modal > button:focus {
+  background-color: #167d70;
+  font-weight: 900;
+  color: #ffff;
+}
+
+#close-modal {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1rem;  
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#table-cart {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;  
+  color: white;
+  font-family: 'VALORANT', sans-serif;
+  font-size: 1.2rem;
+}
+
+thead {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  background-color: #ff0000;
+  text-align: center;  
+  border-bottom: groove #221007 2px;
+}
+
+thead tr,
+#tBody .tr-products {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+#tBody {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#tBody tr {
+  background-color: #8d8f90;
+}
+
+tbody tr td {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  margin-left: 1rem;
+}
+
+.decQuantity,
+.addQuantity {
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 15px;
+  background-color: #930b0b;
+  color: #ffffff;
+  font-size: 1.2rem;  
+  font-weight: 800;
+  cursor: pointer; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.decQuantity:hover,
+.addQuantity:hover {
+  background-color: #1bf44d;
+  font-weight: 900;
+  color: #ffff;
+}
+

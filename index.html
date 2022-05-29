@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Images/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Skins Valorant</title>
+</head>
+<body>
+  <header><h1>Mercado de skins</h1></header>
+  <hr />
+  <table id="table-cart">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>-</th>
+        <th>Cantidad</th>
+        <th>+</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody id="tBody"></tbody>
+  </table>
+  <div class="container-products">
+    <div class="modal">
+      <button id="close-modal">X</button>
+      <input type="text" id="new-product" placeholder="Product">
+      <input type="text" id="new-price" placeholder="Price">
+      <input type="file" name="" id="new-image">
+      <button id="btn-new-create">Agregar Skin</button>
+    </div>
+    <!-- Este Select se debe renderizar por Javascript consumiendo el objeto -->
+    <select name="" id="select-products"></select>
+    <button id="btn-create">Agrega una nueva skin</button>
+    <select name="" id="filterXPrice">
+      <option value="">Elige filtro</option>
+      <option value="Menores a 2">Menor a 60 VP</option>
+      <option value="Entre 2 y 4">Entre 60 y 80 VP</option>
+      <option value="Mayores a 4">Mayores a 100</option>
+    </select>
+  </div>
+  <main id="container-cards"></main>
+  <script src="app.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>
